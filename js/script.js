@@ -35,6 +35,14 @@ function checkSameNumber(x){
 
 //beginning of guess number
 function guessNumber() {
+    if (time > 0){
+        clearInterval(myTime)
+        time = 30
+        timecounting()
+    }
+    else if (time <=0){
+       timecounting(); 
+    }
     let guessInputValue = guessInput.value
     if (checkSameNumber(guessInputValue)){
         return 0
@@ -75,6 +83,9 @@ function guessNumber() {
 
 //----resetgame function
 function ResetGame(){
+    clearInterval(myTime)
+    time =30
+    timecounting()
     randomNumber = Math.round(Math.random() * 100) + 1;
     document.getElementById("guess-box").value=null
     randomNumberAnnouncement.innerHTML = `Too Low or Too High`
@@ -87,15 +98,20 @@ function ResetGame(){
 }
 
 
-// // let time = 30 // time start from 0
-// // let myTime; // timer will be assign to this variable
-// // function timecounting() {
-// // myTime = setInterval(() => {
-// //     time -= 1
-// //     document.getElementById('timecount').innerHTML = time
-// // }, 1000)// every 1 second, it will add 1 into time variable (computer use millisecond so 1000 is 1 second)
-// // }
-// // timecounting()// fire the timecounting function!!
+let time = 30 // time start from 0
+let myTime; // timer will be assign to this variable
+function timecounting() {
+myTime = setInterval(() => {
+    time --
+    document.getElementById('timecount').innerHTML = time
+    if (time === 0){
+            clearInterval(myTime);
+            document.getElementById("button-guess").disabled = true;
+            document.getElementById("button-guess").innerHTML = "No more!";
+    }
+}, 1000)// every 1 second, it will add 1 into time variable (computer use millisecond so 1000 is 1 second)
+}
+timecounting()// fire the timecounting function!!
 
 // // function TimerStop(){
 // //     document.getElementById("button-guess").disabled = true;
