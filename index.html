@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Games</title>
+    <!--bootstrap-4.0-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     <!--magnific-popup-css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="d-flex justify-content-center align-items-center" style="min-height:100vh">
+    <div class="container" style="padding:3%; border:2px solid blue; background-color: lightblue">
+    <form id ="my-game">
+    <h1 id="user-heading" class="text-center">The Number Guessing Game</h1>
+    <h2 id="announcement" class="text-center">Too low or Too High!</h2>
+    <p id="announcement" class="text-center">Hint: Only guesses from 1 to 10.</p>
+    <h2 id="user-heading" class="text-center">Available guesses: <span id="guess-available">5</span></h2>
+    <div class="container text-center d-block">
+    <input id="guess-box" type="number"/>
+    <button id="button-guess" type="button" class="btn-danger" onclick="guessNumber();" style="margin:0 auto">Guess it now!</button>
+    <div class="container text-center">
+    <h5 id="time-text">You have used <span id="timecount">0</span> seconds on this round!</h5>    
+    </div>
+    <div class="container text-center">
+    <h5 id="guess-result">See your result here!</h5>    
+    </div>
+    <button id="reset-game" type="button" class="btn-danger" onclick="ResetGame();" style="margin:0 auto">Reset Game</button>
+    <div class="container text-center">
+    <h5 id="text-history">See your history here</h5>    
+    </div>
+</div>
+</form>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--javascript>
+
+//<bootstrap-4.0-->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!--magnific-popup-js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+<!--font-awesome-5.0-->
+<script src="https://kit.fontawesome.com/c5ed0f55e9.js" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
