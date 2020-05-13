@@ -6,15 +6,14 @@ let randomNumber = Math.round(Math.random() * 100) + 1;
 let guessAvailable = 5;
 let textHistory =document.getElementById("text-history")
 let history =[]
-
-
-
+let i=history.length
+let round = [history[i]]
+console.log(round)
 //2. functions
 
 
 //check 0 and same number
 function checkSameNumber(x){
- let i=history.length
  if (i>=0 && Number(x)==0){
      alert("You must guess a bigger number than Zero!")
      document.getElementById("guess-box").value=null
