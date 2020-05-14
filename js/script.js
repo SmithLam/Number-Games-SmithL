@@ -60,7 +60,7 @@ function guessNumber() {
     document.getElementById("guess-available").innerHTML = `${guessAvailable}`
     //----history
     history.push(guessInputValue)
-    textHistory.innerHTML=`Your history is ${history}!`
+    textHistory.innerHTML=`You are currently guessing ${history}!`
     // for (let a = 0; a< history.length; a++){
     //     historyString = historyString + `${history[a]}, `
     // }

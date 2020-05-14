@@ -17,8 +17,8 @@
     <h1 id="user-heading" class="text-center">The Number Guessing Game</h1>
     <h2 id="announcement" class="text-center">Too low or Too High!</h2>
     <p id="announcement" class="text-center">Hint: Only guesses from 1 to 100.</p>
-    <h2 id="user-heading" class="text-center">Available guesses: <span id="guess-available">5</span></h2>
-    <h2 id="scoreheading" class="text-center">Each remaining guess is 100 points!</h2>
+    <h3 id="user-heading" class="text-center">Available guesses: <span id="guess-available">5</span></h3>
+    <h3 id="scoreheading" class="text-center">Each remaining guess is worth 100 points!</h3>
     <div class="container text-center d-block">
     <input id="guess-box" type="number"/>
     <button id="button-guess" type="button" class="btn-danger" onclick="guessNumber();" style="margin:0 auto">Guess it now!</button>
@@ -30,10 +30,10 @@
     </div>
     <button id="reset-game" type="button" class="btn-danger" onclick="ResetGame();" style="margin:0 auto">Reset Game</button>
     <div class="container text-center">
-    <h5 id="text-history">See your history here!</h5>  
-    <h5 id="round-history">See your round here!</h5>  
-    <h5 id="score-text">See your current score here!</h5>  
-    <h5 id="best-score-text"></h5>  
+    <h5 id="text-history"></h5>  
+    <h5 id="round-history"></h5>  
+    <h5 id="score-text"></h5>  
+    <h5 id="best-score-text" class="text-danger" style="text-transform: uppercase; font-weight: 500;"></h5>  
     <!-- <h5 id="round-history1">See your round here</h5>   
     <h5 id="round-history2"></h5>    -->
     </div>
