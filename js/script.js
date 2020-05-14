@@ -60,6 +60,7 @@ function guessNumber() {
         Your guess was ${guessInputValue} and is lesser by ${randomNumber - guessInputValue}!`;
          }
         else {
+        clearInterval(myTime)
         randomNumberAnnouncement.innerHTML = `THE NUMBER IS ${randomNumber}` 
         guessResult.innerHTML=`
         Your guess was ${guessInputValue} and is correct`;
@@ -68,6 +69,7 @@ function guessNumber() {
         }
     }
     else {
+        clearInterval(myTime)
         randomNumberAnnouncement.innerHTML = `THE NUMBER IS ${randomNumber}` 
         document.getElementById("guess-available").innerHTML = `${guessAvailable}`
         guessResult.innerHTML=`
