@@ -179,7 +179,7 @@ function checkScore(){
 function checkRound(){
     round.push(history)
     for (let a = 0; a< round.length; a++){
-        roundHistory.innerHTML = `You have won ${winningRounds.length} rounds out of ${round.length} rounds and your previous guesses were ${round[round.length-1]}!`
+        roundHistory.innerHTML = `You have won ${winningRounds.length} rounds out of ${round.length} and your previous guesses were ${round[round.length-1]}!`
     }
 }
 
