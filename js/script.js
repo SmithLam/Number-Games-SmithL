@@ -133,9 +133,10 @@ function ResetGame(){
     document.getElementById("guess-box").value=null
     randomNumberAnnouncement.innerHTML = `Too Low or Too High`
     guessAvailable = 5;
+    guessResult.innerHTML=``;
+    textHistory.innerHTML=``;
     document.getElementById("guess-available").innerHTML = `${guessAvailable}`
     history =[]
-    textHistory.innerHTML=`See your history here`
     document.getElementById("button-guess").innerHTML = "Guess again!";
     document.getElementById("button-guess").disabled = false;
 }
