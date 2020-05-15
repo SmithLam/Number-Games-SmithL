@@ -24,12 +24,12 @@ let bestScoreText = document.getElementById("best-score-text")
 
 //check 0 and same number
 function checkSameNumber(x){
- if (i>=0 && Number(x)==0){
+ if (i>=0 && +x==0){
      alert("You must guess a bigger number than Zero!")
      document.getElementById("guess-box").value=null
     return true
  }
- else if (i>0 && Number(x)==history[i-1]){
+ else if (i>=0 && +x == history[history.length-1]){
     alert("You must not guess the same number again!")
     document.getElementById("guess-box").value=null
    return true
